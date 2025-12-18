@@ -102,27 +102,5 @@ main{
     font-size: 40px;
 }
 
-@media (max-width: 768px) {
 
-    .body_index{
-        height: 100vh;
-        display: flex;
-        justify-content: center;   /* poziomo */
-        align-items: center;       /* pionowo */
-    }
-
-    .doroslosc{
-        float: none;
-        font-size: 48px;
-        text-align: center;
-    }
-
-    .btn_dorosly{
-        width: 220px;
-        height: 110px;
-        font-size: 28px;
-        margin-bottom: 0;
-    }
-
-}
 
