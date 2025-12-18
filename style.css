@@ -96,6 +96,7 @@ hr{
 }
 
 .tile{
+    position: relative;
     margin-left: -65px;
     filter: blur(2px);
     width: 170px;
@@ -116,9 +117,54 @@ hr{
         0 8px 15px rgba(0,0,0,0.8);
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+
 }
 
 .tile:hover{
+    transform: translateY(-4px);
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,0.35),
+        0 12px 20px rgba(0,0,0,0.9);
+    cursor: pointer;
+}
+
+.tile::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130%;    
+    height: 4px;        
+    background-color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%) rotate(-45deg); 
+    pointer-events: none; 
+}
+
+.tile18{
+    text-decoration: none;
+    margin-left: -65px;
+    width: 170px;
+    height: 170px;
+    background: rgba(70, 70, 70, 0.9);
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.85);
+
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,0.25),
+        0 8px 15px rgba(0,0,0,0.8);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile18:hover{
     transform: translateY(-4px);
     box-shadow:
         inset 0 1px 2px rgba(255,255,255,0.35),
@@ -291,6 +337,25 @@ hr{
     }
 }
 
+/*------------------FILMIK------------------*/
 
+.filmik{
+    background-image: url(Zrzut\ ekranu\ 2025-12-17\ 234522.png);
+    float: left;
+    margin-top: 100px;
+    margin-left: 20%;
+    width: 900px;
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.827);
+    font-size: 30px;
+}
+
+.filmik video{
+    width: 800px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.827);
+}
 
 
