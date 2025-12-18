@@ -81,8 +81,7 @@ main{
 .body_index{
     background-image: radial-gradient(circle, rgb(28, 28, 28), rgb(15, 15, 15), rgb(0, 0, 0));
     width: 100%;
-    height: 850px;
-    overflow: hidden;
+    height: 100%;
 }
 
 .doroslosc{
@@ -96,11 +95,60 @@ main{
 .btn_dorosly{
     height: 150px;
     width: 300px;
-    margin-bottom: 300px;
     border-radius: 10px 50px 10px 50px;
     background-image: url(Zrzut\ ekranu\ 2025-12-17\ 234522.png);
     font-size: 40px;
+
 }
+.btn_dorosly:hover{
+    box-shadow: 0px 10px 5px rgba(255, 255, 255, 0.827);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.827);
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+.btn_dorosly:active{
+    box-shadow: none;
+    transform: translateY(15px);
+}
+
+@media (max-width: 430px) {
+
+    .body_index{
+        background-image: radial-gradient(circle, rgb(28, 28, 28), rgb(15, 15, 15), rgb(0, 0, 0));
+        width: 100%;
+        height: 100%;
+    }
+
+    .doroslosc{
+        float: left;
+        font-size: 40px;
+        width: 100%;
+        color: rgba(255, 255, 255, 0.47);
+        text-align: center;
+    }
+
+    .btn_dorosly{
+        height: 100px;
+        width: 250px;
+        border-radius: 10px 50px 10px 50px;
+        background-image: url(Zrzut\ ekranu\ 2025-12-17\ 234522.png);
+        font-size: 30px;
+
+    }
+    .btn_dorosly:hover{
+        box-shadow: 0px 10px 5px rgba(255, 255, 255, 0.827);
+        cursor: pointer;
+        background-color: rgb(255, 255, 255, 0.827);
+        background-image: none;
+        color: rgb(0, 0, 0);
+    }
+    .btn_dorosly:active{
+        box-shadow: none;
+        transform: translateY(15px);
+    }
+}
+
 
 
 
