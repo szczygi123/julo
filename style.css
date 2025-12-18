@@ -15,15 +15,9 @@ body{
     height: 1500px;
     overflow-x: hidden;
 }
-main{
-    margin-top: 100px ;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 800px;
-    width: 100%;
-    float: left;
-}
+
+/*------------------MAIN------------------*/
+
 .naglowek{
     float: left;
     background-image: url(Zrzut\ ekranu\ 2025-12-17\ 234522.png);
@@ -37,17 +31,31 @@ main{
     box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.827);
 }
 
+
 .ImieNazwisko{
     font-size: 80px;
     color: rgba(255, 255, 255, 0.47);
 }
 
+main{
+    margin-top: 100px ;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    float: left;
+}
+
 .zdj{
     float: left;
     height: 900px;
-    width: 500px;
-    margin: 100px 0 0 100px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: -350px;
+    
 }
+
     .zdj img{
         max-width: 100%;
         height: auto;
@@ -60,7 +68,8 @@ main{
 .dane{
     width: 500px;
     height: 900px;
-    margin: 100px 0 0 100px;
+    margin-top: -70px;
+    margin-left: 100px;
     float: left;
     
 }
@@ -72,10 +81,32 @@ main{
         font-size: 30px;
     }
 
-.linia{
-    float: left;
+hr{
+    border: 2px solid rgba(255, 255, 255, 0.47);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 80%;
 }
+@media (max-width: 430px) {
+    .naglowek{
+        float: left;
+        background-image: url(Zrzut\ ekranu\ 2025-12-17\ 234522.png);
+        height: 150px;
+        width:  100% ;
+        text-align: center;
+        border-radius: 10px 50px 10px 50px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.827);
+    }
 
+    .ImieNazwisko{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.47);
+    }
+
+}
 /*------------------INDEX------------------*/
 
 .body_index{
