@@ -1,0 +1,3 @@
+function niedostepne() {
+    alert("Niedostępne");
+}
